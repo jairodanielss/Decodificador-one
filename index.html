@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="shortcut icon" href="assets/icone alura.png" type="image/x-icon">
+    <title>Decodificador</title>
+</head>
+
+<body>
+    <header></header>
+    <main class="conteudo_principal">
+        <a class="conteudo_principal_logo_alura" href="https://www.alura.com.br" target="_blank">
+            <img src="./assets/Frame 6.png" alt="logo_alura" class="img_alura">
+        </a>
+        <section class="conteudo_principal_usuario">
+            <div class="usuario_text">
+                <textarea id="texto_usuario" class="usuario_text_input"
+                    placeholder="Digite seu texto"></textarea>
+            </div>
+            <label class="usuario_obs">
+                <img src="./assets/bi_exclamation-circle-fill.png" alt="imagem_sinal_exclamacao"> Apenas letras minúsculas e sem acento.
+            </label>
+            <div class="usuario_botoes">
+                <button onclick="criptografar()" class="botao_criptografar">
+                    Criptografar
+                </button>
+                <button onclick="descriptografar()" class="botao_descriptografar">
+                    Descriptografar
+                </button>
+            </div>
+        </section>
+        <section class="conteudo_principal_saida">
+            <img class="saida_imagem_ilustrativa" src="./assets/High quality products 1 1.png" alt="menino_com_lupa"
+                id="msg_img">
+            <h2 class="saida_obs" id="msg_obs">Nenhuma mensagem encontrada</h2>
+            <label class="saida_informacao" id="msg_info">Digite um texto que você deseja criptografar ou
+                descriptografar.</label>
+            <textarea id="texto_saida" readonly></textarea>
+            <button onclick="bt_copiar()" id="botao_copiar" class="copiar_saida">Copiar</button>
+        </section>
+    </main>
+    <script src="./script/app.js"></script>
+    <footer></footer>
+</body>
+
+</html>

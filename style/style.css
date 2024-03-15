@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-primaria: rgb(242, 245, 252);
+    --cor-secundaria: #D8DFE8;
+    --cor-terciaria: #0A3871;
+    --cor-quaternaria: #FFFFFF;
+
+    --fonte-primaria: "Inter", sans-serif;
+}
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background-color:
+        var(--cor-primaria)
+}
+
+.conteudo_principal {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+}
+
+.conteudo_principal_logo_alura {
+    padding: 30px;
+    height: 80px;
+    width: 5%;
+
+}
+
+.conteudo_principal_usuario {
+    width: 680px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.usuario_text {
+    height: 635px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.usuario_text_input {
+    background-color: transparent;
+    resize: none;
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 2rem;
+    width: 680px;
+    height: 500px;
+    border: none;
+    outline: none;
+}
+
+::placeholder {
+    font-size: 2, 1875rem;
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    color: var(--cor-terciaria);
+
+}
+
+.usuario_obs {
+    padding: 8px;
+    font-family: var(--fonte-primaria);
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+.usuario_botoes {
+    display: flex;
+    gap: 24px;
+}
+
+.botao_criptografar {
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-quaternaria);
+    font-family: var(--fonte-primaria);
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+
+.botao_descriptografar {
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-primaria);
+    font-size: 16px;
+    font-weight: 400;
+    
+}
+
+.conteudo_principal_saida {
+    margin-top: 20px;
+    width: 400px;
+    height: 900px;
+    top: 40px;
+    left: 1000px;
+    border-radius: 32px;
+    background-color: var(--cor-quaternaria);
+    box-shadow: 5px 5px 15px rgba(128, 128, 128, 0.356);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.saida_imagem_ilustrativa {
+    width: 85%;
+}
+
+.saida_obs {
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.saida_informacao {
+    font-family: var(--fonte-primaria);
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0px 36px 0px;
+    text-align: center;
+}
+
+#texto_saida {
+    width: 336px;
+    height: 700px;
+    resize: none;
+    background-color: transparent;
+    resize: none;
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 2rem;
+    border: none;
+    outline: none;
+}
+
+.copiar_saida {
+    width: 336px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: transparent;
+    color: black;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 32px 0 0 0;
+}
+
+@media (max-width: 1200px) {
+    .conteudo_principal {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .conteudo_principal_logo_alura {
+        width: 778px;
+        padding: 30px 0 0 0;
+
+    }
+
+    .conteudo_principal_usuario {
+        gap: 5px;
+        width: auto;
+        min-height: 300px;
+        max-height: 637px;
+        height: fit-content;
+    }
+
+    .usuario_text_input {
+        height: auto;
+    }
+
+    #texto_usuario {
+        height: 400px;
+    }
+
+    .conteudo_principal_saida {
+        width: 688px;
+        min-height: 133px;
+        max-height: 333px;
+        height: fit-content;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        padding: 25px;
+        background-color: var(--cor-quaternaria);
+        margin-bottom: 40px;
+    }
+
+    .saida_imagem_ilustrativa {
+        width: 0px;
+        height: 0px;
+    }
+
+    #texto_saida {
+        width: 624px;
+        margin-top: 32px;
+        text-align: wrap;
+    }
+
+    .copiar_saida {
+        width: 624px;
+        height: 67px;
+        padding: 24px;
+        margin: 32px 0 0 0;
+    }
+}
+
+@media (max-width: 720px) {
+    .conteudo_principal {
+        flex-direction: column;
+    }
+
+    .conteudo_principal_logo_alura {
+        width: 390px;
+    }
+
+    .conteudo_principal_usuario {
+        height: auto;
+        width: 300px;
+    }
+
+    .usuario_text {
+        height: 624px;
+        width: 343px;
+    }
+
+    #texto_usuario {
+        height: 400px;
+    }
+
+    .usuario_botoes {
+        flex-direction: column;
+    }
+
+    .botao_criptografar {
+        width: 343px;
+        height: 67px;
+    }
+
+    .botao_descriptografar {
+        width: 343px;
+        height: 67px;
+    }
+
+    .conteudo_principal_saida {
+        min-height: 186px;
+        max-height: 500px;
+        height: fit-content;
+        border-radius: 24px;
+        width: 300px;
+    }
+
+    .saida_obs {
+        padding: 20px 0;
+        width: 343px;
+    }
+
+    .saida_informacao {
+        width: 100%;
+    }
+
+    #texto_saida {
+        height: 442px;
+        width: 279px;
+        padding: 5px;
+    }
+
+    .copiar_saida {
+        width: 279px;
+        height: 87px;
+    }
+
+    .usuario_botoes {
+        width: 100%;
+    }
+
+    .botao_criptografar {
+        width: 100%;
+    }
+    
+    .botao_descriptografar {
+        width: 100%;
+    }
+
+    .conteudo_principal_saida {
+        width: 260px;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 320px){
+    .conteudo_principal_logo_alura {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .conteudo_principal_usuario {
+        width: 290px;
+        margin: 0 0 0 45px;
+    }
+
+    .conteudo_principal_saida {
+        margin-left: 50px;
+    }
+}
